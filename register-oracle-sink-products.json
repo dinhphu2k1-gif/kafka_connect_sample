@@ -1,0 +1,17 @@
+{
+    "name": "hudi.products",
+    "config": {
+      "connector.class" : "io.debezium.connector.oracle.OracleConnector",
+      "tasks.max" : "1",
+      "topic.prefix" : "hudi",
+      "database.hostname" : "192.168.19.179",
+      "database.port" : "1521",
+      "database.user" : "c##dbzuser",
+      "database.password" : "dbz",
+      "database.dbname" : "hudi",
+      "database.pdb.name": "dinhphu",
+      "table.include.list": "C##DBZUSER.products",
+      "schema.history.internal.kafka.bootstrap.servers" : "kafka:9092",
+      "schema.history.internal.kafka.topic": "hudi.products"
+    }
+}
